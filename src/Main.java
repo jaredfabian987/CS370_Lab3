@@ -92,7 +92,7 @@ class Grid extends JPanel {
             g2d.drawLine (x,0,x, height);
         }
 
-        // we  also need to draw the lines going veritcally
+        // we  also need to draw the lines going horizontally
         for (int h = 0; h <= SIZE; h ++){
             int y = h *  cellH;
             g2d.drawLine (0, y, width, y);
