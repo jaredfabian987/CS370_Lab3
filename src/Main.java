@@ -88,14 +88,12 @@ class Grid extends JPanel {
 
         g2d.setColor (Color.WHITE);
         for (int v = 0; v <= SIZE; v ++){
-            int x = v *  cellW;
-            g2d.drawLine (x,0,x, height);
+            g2d.drawLine (v * cellW,0,v * cellW, height);
         }
 
         // we  also need to draw the lines going horizontally
         for (int h = 0; h <= SIZE; h ++){
-            int y = h *  cellH;
-            g2d.drawLine (0, y, width, y);
+            g2d.drawLine (0, h * cellH, width, h * cellH);
         }
 
     }
